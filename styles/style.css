@@ -1,5 +1,377 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  /* сохраните в разметке и стилях класс page у тега body. 
+  Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  font-family: var(--ff, "IBM Plex mono", monospace);
+  background-image: var(--back-img, url(../images/cover-image.png));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: var(--back-color, #000028);
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 23.4px;
+}
+
+.link {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--shadow-second-color, #ff0070);
+}
+
+.link:hover {
+  border-bottom: 1px solid currentColor;
+}
+
+.link:focus {
+  outline: none;
+}
+
+.link:focus-visible {
+  outline: 1px solid currentColor;
+}
+
+.header {
+  position: relative;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  height: 100vh;
+  min-height: 668px;
+}
+
+.rec {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ff0070;
+  box-shadow: 0 0 4px 2px var(--accent-color, #ff0070);
+  top: 19px;
+  right: 20px;
+  visibility: var(--rec-decor, visibile);
+}
+
+.rec::after {
+  position: absolute;
+  content: "REC";
+  text-transform: uppercase;
+  color: #ff0070;
+  font-size: 19px;
+  right: 20px;
+  top: -6px;
+}
+
+.decorated-zone::before {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ff0070;
+  top: 10px;
+  right: 10px;
+  border-block-end: none;
+  border-inline-start: none;
+}
+
+.decorated-zone::after {
+  position: absolute;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 1px solid #ff0070;
+  bottom: 10px;
+  left: 10px;
+  border-block-start: none;
+  border-inline-end: none;
+}
+
+.header__theme-menu-item {
+  text-align: end;
+}
+
+.header__theme-menu-item:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.header__theme-menu-button {
+  border: none;
+  background-color: transparent;
+  color: #ff0070;
+  padding: 0 13px;
+  cursor: pointer;
+}
+
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--hover-color, #ff007066);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid currentColor;
+}
+
+.header__theme-menu-button_active {
+  outline: 1px solid var(--button-color, #ff0070);
+}
+
+.header-title {
+  color: var(--title-color, #db00ff);
+  text-shadow: 4px 4px 0 var(--accent-color, #ff0070);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header-text {
+  background-color: #ff0070;
+  color: var(--decor-color, #000028);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.title-decor {
+  background-color: #ff0070;
+  color: #000028;
+}
+
+.main {
+  display: grid;
+  gap: 50px;
+  padding: 40px 10px;
+}
+
+.section {
+  display: grid;
+  gap: 20px;
+}
+
+.list {
+  display: grid;
+  gap: 20px;
+}
+
+.title {
+  color: var(--title-accent-color, #ff0070);
+  font-weight: 700;
+}
+
+.text {
+  color: var(--text-color, #f1b2ce);
+}
+
+.section__gold h4 {
+  font-weight: 400;
+}
+
+.section__gold h3 {
+  margin-bottom: 20px;
+}
+
+.section__gallery {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__title {
+  margin-bottom: 0;
+}
+
+.gallery__list {
+  display: grid;
+  gap: 10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.footer {
+  position: relative;
+  height: 100vh;
+  min-height: 668px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-title {
+  color: #db00ff;
+  text-shadow: 2px 2px var(--shadow-color, #ff0070);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  line-height: 82.5%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+
+  .decorated-zone::after {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .rec {
+    top: 28px;
+    right: 29px;
+  }
+
+  .rec::after {
+    right: 19px;
+    top: -6px;
+  }
+
+  .header-title {
+    margin-left: -20px;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    text-shadow: 4px 4px var(--shadow-second-color, #ff0070);
+  }
+
+  .header-text {
+    max-width: 364px;
+    margin-left: auto;
+  }
+
+  .main {
+    display: grid;
+    gap: 80px;
+    padding: 60px 20px;
+  }
+
+  .section__focus {
+    display: flex;
+    gap: 20px;
+  }
+
+  .section__focus-title {
+    min-width: 236px;
+  }
+
+  .section__concentration-title {
+    max-width: 236px;
+  }
+
+  .section__gold {
+    display: flex;
+    gap: 20px;
+  }
+
+  .section__gold-title {
+    min-width: 236px;
+  }
+
+  .section__gallery {
+    display: grid;
+    gap: 20px;
+  }
+
+  .gallery__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery__image:nth-child(1) {
+    grid-column: span 2;
+  }
+
+  .gallery__image:nth-child(2) {
+    grid-row: span 2;
+  }
+
+  .gallery__image:nth-child(3) {
+    grid-row: span 2;
+  }
+
+  .gallery__image:nth-child(5) {
+    grid-column: span 2;
+  }
+
+  .footer-title {
+    text-shadow: 2px 2px var(--shadow-second-color, #ff0070);
+  }
+}
+
+@media (min-width: 1024px) {
+  .header__theme-menu {
+    justify-self: center;
+    align-self: flex-start;
+  }
+
+  .header__theme-menu-list {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+
+  .header-title {
+    text-shadow: 4px 4px var(--shadow-color, #ff0070);
+  }
+
+  .footer-title {
+    text-shadow: 4px 4px var(--shadow-color, #ff0070);
+  }
+
+  .header-text {
+    min-width: 491px;
+  }
+
+  .section__focus-title {
+    min-width: 315px;
+  }
+
+  .section__concentration-title {
+    max-width: 315px;
+  }
+
+  .section__concentration-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section__gold-title {
+    min-width: 315px;
+  }
+
+  .gallery__image:nth-child(1) {
+    height: clamp(12rem, -0.75rem + 26.5625vw, 16.25rem);
+  }
+
+  .gallery__image:nth-child(2) {
+    height: clamp(27.5625rem, -1.3125rem + 60.1563vw, 37.1875rem);
+  }
+
+  .gallery__image:nth-child(3) {
+    height: clamp(35.5rem, -2rem + 78.125vw, 48rem);
+  }
+
+  .gallery__image:nth-child(4) {
+    height: clamp(14.375rem, -1.5625rem + 33.2031vw, 19.6875rem);
+  }
+
+  .gallery__image:nth-child(5) {
+    height: clamp(19.875rem, -0.75rem + 42.9688vw, 26.75rem);
+  }
+
+  .footer__title {
+    text-shadow: 2px 2px var(--shadow-color, #ff0070);
+  }
 }
