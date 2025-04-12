@@ -312,6 +312,7 @@
   }
 
   .header__theme-menu-list {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;

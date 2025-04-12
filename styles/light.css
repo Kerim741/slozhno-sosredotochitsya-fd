@@ -1,4 +1,4 @@
-.page.theme_light {
+:root.theme-light {
   --back-img: url(../images/cover-image-light.png);
   --back-color: var(#fff1f7);
   --rec-decor: hidden;
