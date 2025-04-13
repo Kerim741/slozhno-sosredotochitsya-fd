@@ -1,6 +1,6 @@
 :root.theme-dark {
   --back-img: url(../images/cover-image-dark.png);
-  --back-color: #000028;
+  --back-color: var(--black-color,#000028);
   --rec-decor: visible;
 
   --accent-color: #ff0070;
@@ -14,11 +14,10 @@
   --hover-color: #ff007066;
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --back-img: url(../images/cover-image-dark.png);
-    --back-color: #000028;
+    --back-color: var(--black-color,#000028);
     --rec-decor: visible;
 
     --accent-color: #ff0070;
