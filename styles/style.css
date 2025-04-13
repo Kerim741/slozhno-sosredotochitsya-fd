@@ -139,7 +139,7 @@
 
 .main {
   display: grid;
-  gap: 47px;
+  gap: 50px;
   padding: 40px 10px;
 }
 
@@ -148,7 +148,7 @@
 }
 
 .focus__text {
-  margin-top: 7px;
+  margin-top: 8px;
   font-size: 17px;
 }
 
@@ -157,7 +157,7 @@
 }
 
 .concentration__text {
-  margin-top: 7px;
+  margin-top: 8px;
 }
 
 .section {
@@ -181,7 +181,8 @@
 }
 
 .gold__text {
-  margin-top: 7px;
+  margin-top: 8px;
+  font-size: 17px;
 }
 
 .section__gold h4 {
