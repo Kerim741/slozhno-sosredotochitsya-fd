@@ -156,6 +156,7 @@
 .title {
   color: var(--title-accent-color, #ff0070);
   font-weight: 700;
+  font-size: 18px;
 }
 
 .text {
