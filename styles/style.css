@@ -121,9 +121,7 @@
   color: var(--title-color, #db00ff);
   text-shadow: 4px 4px 0 var(--shadow-second-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  line-height: 83%;
-  /* letter-spacing: 0%;
-  text-align: left; */
+  line-height: 83%; 
 }
 
 .header-text {
@@ -229,9 +227,6 @@
   color: #db00ff;
   text-shadow: 2px 2px var(--shadow-color, #ff0070);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  /* line-height: 82.5%;
-  letter-spacing: 0%;
-  text-align: left; */
 }
 
 @media (min-width: 768px) {
@@ -369,7 +364,7 @@
   .section__gold-title {
     min-width: 315px;
   }
-  
+
   .gallery__image:nth-child(1) {
     height: clamp(12rem, -0.75rem + 26.5625vw, 16.25rem);
   }
