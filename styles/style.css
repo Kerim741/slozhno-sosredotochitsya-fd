@@ -149,7 +149,7 @@
 
 .list {
   display: grid;
-  gap: 20px;
+  gap: 21px;
 }
 
 .title {
@@ -172,12 +172,20 @@
   font-size: 17px;
 }
 
+.section__concentration-title {
+  margin-top: 30px;
+}
+
 .concentration__title {
   font-size: 17px;
 }
 
 .concentration__text {
   margin-top: 8px;
+}
+
+.section__gold-title {
+  margin-top: 5px;
 }
 
 .section__gold h4 {
@@ -189,7 +197,7 @@
 }
 
 .gold__text {
-  margin-top: 8px;
+  margin-top: 14px;
   font-size: 17px;
 }
 
