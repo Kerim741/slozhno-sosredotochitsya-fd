@@ -161,11 +161,12 @@
 }
 
 .focus__title {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 .text {
   color: var(--text-color, #f1b2ce);
+  margin-top: 18px;
 }
 
 .focus__text {
@@ -272,7 +273,7 @@
   .main {
     display: grid;
     gap: 80px;
-    padding: 136px 20px;
+    padding: 60px 20px;
   }
 
   .section__focus {
@@ -282,7 +283,6 @@
 
   .section__focus-title {
     min-width: 236px;
-    font-size: 18px;
   }
 
   .section__concentration-title {
@@ -327,6 +327,7 @@
 
   .footer-title {
     text-shadow: 2px 2px var(--shadow-second-color, #ff0070);
+    margin-left: 0;
   }
 }
 
@@ -338,45 +339,17 @@
   }
 
   .header__theme-menu-list {
-    /* display: flex; */
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    /* gap: 8px; */
   }
 
   .header-title {
     text-shadow: 4px 4px var(--shadow-color, #ff0070);
-    margin-top: 78px;
-  }
-
-  .main {
-    gap: 65px;
-    padding-bottom: 62px;
-  }
-
-  .footer-title {
-    text-shadow: 4px 4px var(--shadow-color, #ff0070);
-    font-size: 156px;
-    margin-top: 78px;
   }
 
   .header-text {
     min-width: 491px;
-    margin-top: 75px;
-  }
-
-  .list {
-    gap: 6px;
-  }
-
-  .title-decor {
-    font-size: 18px;
-  }
-
-  .decorated-zone::after {
-    left: 20px;
-    bottom: -57px;
   }
 
   .section__focus-title {
@@ -385,7 +358,6 @@
 
   .section__concentration-title {
     max-width: 315px;
-    font-size: 18px;
   }
 
   .section__concentration-list {
@@ -396,13 +368,8 @@
 
   .section__gold-title {
     min-width: 315px;
-    font-size: 18px;
   }
-
-  .section__gold-list {
-    gap: 29px;
-  }
-
+  
   .gallery__image:nth-child(1) {
     height: clamp(12rem, -0.75rem + 26.5625vw, 16.25rem);
   }
@@ -423,7 +390,7 @@
     height: clamp(19.875rem, -0.75rem + 42.9688vw, 26.75rem);
   }
 
-  .footer__title {
+  .footer-title {
     text-shadow: 2px 2px var(--shadow-color, #ff0070);
   }
 }
