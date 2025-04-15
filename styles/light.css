@@ -1,4 +1,4 @@
-.page.theme-light {
+:root.theme-light {
   --bg-image: url(../images/cover-image-light.png);
   --bg-color: var(#FFF1F7);
   --color-accent: #FF8DCB;
