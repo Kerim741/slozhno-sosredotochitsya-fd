@@ -8,7 +8,7 @@
   background-color: var(--back-color, #000028);
   font-size: 18px;
   font-weight: 400;
-  line-height: 23.4px;
+  line-height: 22.9px;
 }
 
 .link {
@@ -184,6 +184,10 @@
   margin-top: 8px;
 }
 
+.gold__suptitle {
+  font-size: 18px;
+}
+
 .section__gold-title {
   margin-top: 5px;
 }
@@ -208,6 +212,7 @@
 
 .gallery__title {
   margin-bottom: 0;
+  font-size: 18px;
 }
 
 .gallery__list {
