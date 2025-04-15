@@ -42,7 +42,7 @@
   position: absolute;
   content: '';
   width: 25px;
-  height: 35px;
+  height: 25px;
   border-top: 1px solid var(--color-button, #FF0070);
   border-right: 1px solid var(--color-button, #FF0070);
   top: 10px;
@@ -53,7 +53,7 @@
   position: absolute;
   content: '';
   width: 25px;
-  height: 35px;
+  height: 25px;
   border-left: 1px solid var(--color-button, #FF0070);
   border-bottom: 1px solid var(--color-button, #FF0070);
   left: 10px;
@@ -300,6 +300,7 @@
 
 @media (min-width: 1024px) {
   .header__theme-menu {
+    display: flex;
     justify-self: center;
     align-self: flex-start;
   }
@@ -308,6 +309,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: start;
+    gap: 15px;
+    margin-top: 1px;
   }
 
   .header-title {
