@@ -138,7 +138,7 @@
 
 .main {
   display: grid;
-  gap: 48px;
+  gap: 47px;
   padding: 40px 10px;
 }
 
@@ -149,7 +149,7 @@
 
 .list {
   display: grid;
-  gap: 21px;
+  gap: 18px;
 }
 
 .title {
@@ -275,7 +275,7 @@
 
   .main {
     display: grid;
-    gap: 80px;
+    gap: 75px;
     padding: 60px 20px;
   }
 
@@ -299,6 +299,10 @@
 
   .section__gold-title {
     min-width: 236px;
+  }
+
+  .title-decor {
+    font-size: 18px;
   }
 
   .section__gallery {
@@ -342,6 +346,7 @@
   }
 
   .header__theme-menu-list {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: start;
@@ -353,6 +358,11 @@
 
   .header-text {
     min-width: 491px;
+  }
+
+  .main {
+    display: grid;
+    gap: 75px;
   }
 
   .section__focus-title {
@@ -371,6 +381,10 @@
 
   .section__gold-title {
     min-width: 315px;
+  }
+
+  .title-decor {
+    font-size: 18px;
   }
 
   .gallery__image:nth-child(1) {
