@@ -1,4 +1,9 @@
 .page {
+  background-image: var(--bg-image, url(../images/cover-image.png));
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   font-family: var(--font-family, 'IBM Plex mono', monospace);
   background-color: var(--bg-color, #000028);
   font-size: 18px;
@@ -24,11 +29,6 @@
 }
 
 .header {
-  background-image: var(--bg-image, url(../images/cover-image.png));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   position: relative;
   padding: 10px;
   display: grid;
@@ -117,7 +117,7 @@
 
 .header-title {
   color: var(--color-title, #DB00FF);
-  text-shadow: 4px 4px var(--color-shadow-second, #FF0070);
+  text-shadow: 4px 4px var(--color-shadow-second, #FF8DCB);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 83%;
 }
@@ -229,7 +229,7 @@
   .header-title {
     margin-left: -20px;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    text-shadow: 4px 4px var(--color-shadow-second, #FF0070);
+    text-shadow: 4px 4px var(--color-shadow-second, #FF8DCB);
   }
 
   .header-text {
@@ -293,7 +293,7 @@
   }
 
   .footer__title {
-    text-shadow: 2px 2px var(--color-shadow-second, #FF0070);
+    text-shadow: 2px 2px var(--color-shadow-second, #FF8DCB);
     margin-left: 0;
   }
 }
@@ -309,12 +309,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: start;
-    gap: 15px;
+    gap: 14px;
     margin-top: 1px;
   }
 
   .header-title {
-    text-shadow: 4px 4px var(--color-shadow, #FF0070);
+    text-shadow: 4px 4px var(--color-shadow-second, #FF8DCB);
   }
 
   .header-text {
